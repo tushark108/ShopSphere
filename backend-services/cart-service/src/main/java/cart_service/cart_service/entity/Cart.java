@@ -56,4 +56,5 @@ public class Cart {
     public void setPrice(Double price) {
         this.price = price;
     }
+
 }
