@@ -12,7 +12,7 @@
 
     <!-- 2️⃣ File Appender (ONLY timestamp files) -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        
+
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 
             <!-- ✅ Date + Time in filename -->
@@ -31,7 +31,6 @@
 
     </appender>
 
-    <!-- 3️⃣ Both console + file -->
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
