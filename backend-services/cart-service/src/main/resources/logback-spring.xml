@@ -12,9 +12,7 @@
 
     <!-- 2️⃣ File Appender (ONLY timestamp files) -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-
-        <!-- ❌ NO current file -->
-
+        
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 
             <!-- ✅ Date + Time in filename -->
