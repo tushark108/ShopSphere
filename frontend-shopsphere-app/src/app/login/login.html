@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ShopSphere Login</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <!-- Font Awesome for bag icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- LEFT: LOGIN -->
+      <section class="login-section">
+        <!-- LOGO -->
+        <div class="brand">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="shop">SHOP</span><span class="sphere">SPHERE</span>
+        </div>
+
+        <div class="form-area">
+          <h2>Welcome Back</h2>
+          <p class="subtitle">Login to continue shopping</p>
+
+          <div>
+            <div class="field">
+              <input type="text" #username />
+              <label>Username</label>
+            </div>
+
+            <div class="field">
+              <input type="password" #password />
+              <label>Password</label>
+              <span class="toggle"><i class="fa fa-eye"></i></span>
+            </div>
+
+            <div class="options">
+              <label><input type="checkbox" /> Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <div class="actions">
+              <button type="submit" (click)="login(username.value, password.value)" class="primary">
+                Login
+              </button>
+              <button type="reset" class="secondary">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <!-- RIGHT: SIGNUP PROMO -->
+      <section class="promo-section">
+        <div class="promo-content">
+          <h1>Join ShopSphere</h1>
+          <p>Discover trending products, exclusive deals, and seamless shopping experience.</p>
+          <button>Create Account</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
